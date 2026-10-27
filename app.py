@@ -78,3 +78,11 @@ async def home(request: Request):
         name="index.html",
         context={"request": request},
     )
+
+@app.get("/summarize/", response_class=HTMLResponse)
+async def summarizer(request: Request):
+    return templates.TemplateResponse(
+        request=request,
+        name="summarize.html",
+        context={"request": request},
+    )

@@ -1,6 +1,6 @@
-# Min-TXT
+# Mini-TXT
 
-Min-TXT is a text summarizer built with FastAPI and a local T5 model.
+Mini-TXT is a text summarizer built with FastAPI and a local T5 model.
 
 ## Setup
 
@@ -21,7 +21,8 @@ Run the app from the repository directory:
 uvicorn app:app --reload
 ```
 
-Open <http://127.0.0.1:8000/> in your browser. The API accepts `POST
+Open <http://127.0.0.1:8000/> in your browser to visit the dashboard. Select
+**Let's Summarize** to open the text summarizer. The API accepts `POST
 /summarize/` requests with a JSON body such as:
 
 ```json
@@ -29,3 +30,8 @@ Open <http://127.0.0.1:8000/> in your browser. The API accepts `POST
 ```
 
 The app loads its model from `saved_summary_model/` relative to `app.py`.
+
+
+
+![mini_TXT](image.png)
+![summerizer-box](image-1.png)
